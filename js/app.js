@@ -1,3 +1,12 @@
+//Rules for FizzBuzz REFACTOR Challenge:
+//When page loads, users will be prompted to type a #
+//Use .prompt() function & insert text
+//Use counter argument fxn to add fizz/buzz accordingly
+//Convert the string to a #
+//Validate user input by using .parseInt()
+//Optionally, make sure no decimal is used
+//Don't worry about design
+
 $(document).ready(function() {
   $('#inputForm').on('submit', function(event) {
     event.preventDefault(); 
@@ -22,4 +31,4 @@ $(document).ready(function() {
   })
   
 }); 
-  //will not add a blank item when alert is shown and will only add <li>s upon entering numbers
+  
