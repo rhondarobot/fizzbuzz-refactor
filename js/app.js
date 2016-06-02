@@ -1,17 +1,15 @@
 //Rules for FizzBuzz REFACTOR Challenge:
 //When page loads, users will be prompted to type a #
-//Use .prompt() function & insert text
+//Use prompt() function & insert text
 //Use counter argument fxn to add fizz/buzz accordingly
 //Convert the string to a #
-//Validate user input by using .parseInt()
+//Validate user input by using parseInt()
 //Optionally, make sure no decimal is used
 //Don't worry about design
-
 $(document).ready(function() {
-  $('#inputForm').on('submit', function(event) {
-    event.preventDefault(); 
-    
-    var newItem = $('#inputNumber').val();
+
+    var newItem = prompt("Please enter a number 1-100");
+    console.log(newItem);
  if (newItem === "") {
         alert("Please enter an item first!") 
   } else if (newItem % 3 === 0 && newItem % 5 === 0) {
@@ -28,7 +26,6 @@ $(document).ready(function() {
         $('ul').append('<li>' + newItem + '</li>');   
         $('#inputNumber').val('');
   }
-  })
   
-}); 
+});
   
